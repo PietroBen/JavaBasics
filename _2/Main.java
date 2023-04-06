@@ -1,4 +1,4 @@
-package javabasics._2;
+package JavaBasics._2;
 
 public class Main {
     //Run this like before to execute all the exercises
@@ -23,9 +23,9 @@ public class Main {
      */
     public static void exercise2() {
         System.out.println("\nExercise 2: ");
-        System.out.print("Hello");
+        System.out.print("Hello ");
         //Write code underneath this
-        System.out.println("Hello Pietro!");
+        System.out.println("Pietro!");
         //Write code above this
     }
 
