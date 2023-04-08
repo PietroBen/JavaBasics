@@ -66,7 +66,7 @@ public class Main {
         System.out.println("\nExercise 3:");
         // Write your code here
         double celsius = 10.7;
-        double fahrenheit = celsius * 1.8 + 32;
+        double fahrenheit = (celsius * 1.8) + 32;
         System.out.println("celsius = " + celsius);
         System.out.println("fahrenheit = " + fahrenheit);
     }
@@ -105,15 +105,15 @@ public class Main {
     private static void exercise5Bonus() {
         System.out.println("\nExercise 5:");
         // Write your code here
-        // Temo di non aver capito la consegna, pertanto scusami se l'ho risolto male
         // in 1 line
         int age = 50;
         System.out.println(age -= age);
+
         // in 3 lines
         int secondAge = 50;
-        secondAge --;
-        secondAge -= secondAge;
-        System.out.println(secondAge);
+        System.out.println(secondAge -10);
+        System.out.println(secondAge -35);
+        System.out.println(secondAge - secondAge);
 
     }
 
