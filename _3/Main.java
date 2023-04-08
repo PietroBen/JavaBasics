@@ -26,8 +26,12 @@ public class Main {
     private static void exercise2() {
         System.out.println("\nExercise 2:");
         // Write your code here
-        System.out.print("My age=");
-        System.out.println(28);
+        int myAge = 28;
+        System.out.println("My age=" + myAge);
+        boolean hasEatenLunchToday = true;
+        System.out.println("Has Eaten lunch=" + hasEatenLunchToday);
+        double lunchCost = 5.99;
+        System.out.println("Lunch cost=" + lunchCost);
     }
 
     /**
