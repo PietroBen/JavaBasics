@@ -26,12 +26,10 @@ public class Main {
     private static void exercise2() {
         System.out.println("\nExercise 2:");
         // Write your code here
-        int myAge = 28;
-        System.out.println("My age=" + myAge);
-        boolean hasEatenLunchToday = true;
-        System.out.println("Has Eaten lunch=" + hasEatenLunchToday);
-        double lunchCost = 5.99;
-        System.out.println("Lunch cost=" + lunchCost);
+        System.out.println("My age is=" + 28);
+        System.out.println("Has lunch today=" + true);
+        System.out.println("Price lunch=" + 4.99);
+
     }
 
     /**
@@ -47,7 +45,10 @@ public class Main {
         System.out.println("\nExercise 3:");
         // Write your code here
         int myAge = 28;
-        System.out.print("My age=");
-        System.out.print(myAge);
+        System.out.println("My age=" + myAge);
+        boolean hasEatenLunchToday = true;
+        System.out.println("Has Eaten lunch=" + hasEatenLunchToday);
+        double lunchCost = 4.99;
+        System.out.println("Lunch cost=" + lunchCost);
     }
 }
