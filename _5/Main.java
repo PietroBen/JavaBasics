@@ -111,9 +111,11 @@ public class Main {
 
         // in 3 lines
         int secondAge = 50;
-        System.out.println(secondAge -10);
-        System.out.println(secondAge -35);
-        System.out.println(secondAge - secondAge);
+        secondAge -= 10;
+        secondAge -= 20;
+        secondAge -= 20;
+
+        System.out.println(secondAge);
 
     }
 
