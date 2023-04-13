@@ -63,11 +63,11 @@ public class Main {
         if (ourDouble > 2.5) {
             System.out.println("Greater than");
         }
-        boolean ourBoolean = ourDouble + 1.0 < 2.5;
-        if (!(ourBoolean == false)) {
+        boolean ourBoolean = (ourDouble + 1.0) < 2.5;
+        if (ourBoolean == true) {
                 System.out.println("Still less than");
-            } else System.out.println("Now greater than!");
-        }
+        } else System.out.println("Now greater than!");
+    }
 
 
 
