@@ -80,17 +80,15 @@ public class Main {
      */
     private static void exercise4() {
         System.out.println("\nExercise 4:");
-        String startStr = "5";
+        String startStr = "5 ";
         // Write your code here
-        int ourNumber = Integer.valueOf(startStr);
+        int ourNumber = Integer.valueOf(startStr.trim());
+        System.out.println(ourNumber);
         ourNumber = ourNumber * 2;
         String startStr2 = String.valueOf(ourNumber) + String.valueOf(ourNumber);
         double ourDouble = Double.valueOf(startStr2);
         ourDouble /= 3.5;
         double result = Math.floor(ourDouble);
         System.out.println(result);
-
-
-
     }
 }
