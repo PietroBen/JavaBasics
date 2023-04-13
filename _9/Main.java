@@ -35,11 +35,11 @@ public class Main {
      */
     private static void exercise2() {
         System.out.println("\nExercise 2:");
-        double remainingMoney = 15.0;
+        double remainingMoney = 50.0;
         double lunchCost = 50.0;
 
         // Your if statement here
-        if (lunchCost < remainingMoney) {
+        if (lunchCost <= remainingMoney) {
             System.out.println("Lunch time!");
         } else System.out.println("You go hungry today");
     }
@@ -58,18 +58,17 @@ public class Main {
      */
     private static void exercise3() {
         System.out.println("\nExercise 3:");
-        double ourDouble = 1.5;
+        double ourDouble = 3.5;
         //Write your code here
         if (ourDouble > 2.5) {
             System.out.println("Greater than");
         }
-        if (ourDouble < 2.5) {
-            double ourDouble2 = 1.0;
-            if ((ourDouble + ourDouble2) < 2.5) {
+        boolean ourBoolean = ourDouble + 1.0 < 2.5;
+        if (!(ourBoolean == false)) {
                 System.out.println("Still less than");
             } else System.out.println("Now greater than!");
         }
-    }
+
 
 
     /**
