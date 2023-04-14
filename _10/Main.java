@@ -80,14 +80,22 @@ public class Main {
      */
     private static void exercise3() {
         System.out.println("\nExercise 3 - Test Grader:");
-        double ourTestScore = 7;
+        double ourTestScore = 8;
         double maxTestScore = 10;
         boolean isTestRetry = true;
         //Write your code here
         if (ourTestScore >= 9) {
+            if (isTestRetry){
+                System.out.println("C");
+            } else {
             System.out.println("A");
+            }
         } else if (ourTestScore >= 8) {
-            System.out.println("B");
+            if (isTestRetry) {
+                System.out.println("C");
+            } else {
+                System.out.println("B");
+            }
         } else if (ourTestScore >= 7) {
             System.out.println("C");
         } else if (ourTestScore >= 6) {
