@@ -1,4 +1,4 @@
-package javabasics._12;
+package JavaBasics._12;
 
 public class Main {
     public static void main(String[] args) {
@@ -77,7 +77,7 @@ public class Main {
             yourMealScore = 3 * weight;
         }
         if (yourMealScore < 5) {
-            yourMealScore += 2;
+            yourMealScore = 5;
         }
         // End it here
 
