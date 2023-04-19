@@ -24,7 +24,8 @@ public class Main {
 
         //exercise 1a
         while (currentInvestmentValueEuros < 100_000) {
-            System.out.println("Investment value = €" + currentInvestmentValueEuros + " after " + yearsPast++ + " years" +
+            yearsPast++;
+            System.out.println("Investment value = €" + currentInvestmentValueEuros + " after " + " years" +
                     ", interest this year €" + interestGainedThisYearEuros);
             double previousYearsInvestment = currentInvestmentValueEuros;
             currentInvestmentValueEuros = currentInvestmentValueEuros * perYearMultiplier;
@@ -33,12 +34,14 @@ public class Main {
         System.out.println("We reached 100.000" + currentInvestmentValueEuros);
 
         // exercise 1b
-        //while (currentInvestmentValueEuros < 15_000 || yearsPast <= 5) {
-        //    System.out.println("Investment value = €" + currentInvestmentValueEuros + " after " + yearsPast++ + " years" +
-        //            ", interest this year €" + interestGainedThisYearEuros);
-        //    double previousYearsInvestment = currentInvestmentValueEuros;
-        //    currentInvestmentValueEuros = currentInvestmentValueEuros * perYearMultiplier;
-        //    interestGainedThisYearEuros = currentInvestmentValueEuros - previousYearsInvestment;
+        while (currentInvestmentValueEuros < 15_000 || yearsPast <= 5) {
+            yearsPast++;
+            System.out.println("Investment value = €" + currentInvestmentValueEuros + " after " +  " years" +
+                    ", interest this year €" + interestGainedThisYearEuros);
+            double previousYearsInvestment = currentInvestmentValueEuros;
+            currentInvestmentValueEuros = currentInvestmentValueEuros * perYearMultiplier;
+            interestGainedThisYearEuros = currentInvestmentValueEuros - previousYearsInvestment;
+        }
     }
 
     /**
@@ -62,7 +65,7 @@ public class Main {
      */
     private static void exercise2() {
         System.out.println("Exercise 2 - Selling the pound:");
-        double poundToEuroExchangeRate = 1 + (Math.random() * 0.2);
+
         int daysToSell = 0;
         int remainingPoundsToSell = 10_000;
         int maxPoundsToSellPerDay = 1_000;
@@ -70,7 +73,8 @@ public class Main {
         // Write your while loop here
         while (remainingPoundsToSell > 0) {
             daysToSell++;
-            if (poundToEuroExchangeRate < 1.5) {
+            double poundToEuroExchangeRate = 1 + (Math.random() * 0.2);
+            if (poundToEuroExchangeRate > 1.15) {
                 remainingPoundsToSell = remainingPoundsToSell - maxPoundsToSellPerDay;
             }
         }
