@@ -69,12 +69,14 @@ public class Main {
     public static void exercise3() {
 
         System.out.println("Exercise 3:");
-        Date myDate = new Date();
+        LocalDate myDate = LocalDate.now();
 
         System.out.println(myDate);
-        //System.out.println(myDate.getDayOfMonth());
-        System.out.println(myDate.getDay());
-        //System.out.println(myDate.Month());
+        System.out.println(myDate.getDayOfMonth());
+        System.out.println(myDate.getDayOfWeek());
+        System.out.println(myDate.getDayOfYear());
+        System.out.println(myDate.getMonthValue());
+
 
     }
 }
