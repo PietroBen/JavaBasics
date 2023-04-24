@@ -49,15 +49,19 @@ public class Main {
     private static void exercise2() {
         System.out.println("\nExercise 2:");
         List<String> names = Arrays.asList("Alan   ", "Alice   ", "Ant0ni0   ", "  Aziz");
-        List<String> numbers = Arrays.asList("1,2,3,4,5,6,7,8,9,0");
-        for (String name : names) {
-            if (names.equals(numbers)) {
-                System.out.println("invalid");
-            }else
-            System.out.println(name.toUpperCase().trim());
-            }
 
         // Call your function
+        for (String name : names)
+            System.out.println(checkName(name));
+        }
+        public static String checkName(String name){
+            List<String> numbers = Arrays.asList("1","2","3","4","5","6","7","8","9","0");
+            for (String number : numbers){
+                if(name.contains(number)){
+                    return "Invalid";
+                }
+            }
+            return name.toUpperCase().trim();
         }
 
 
@@ -74,7 +78,7 @@ public class Main {
 
         // Call your function
         }
-        void printEveryVariables (){
+        public static void printEveryVariables (){
             double myLunchPrice = 5.99;
             String lunchType = "sandwich";
             String description = "Nice big sandwich";
