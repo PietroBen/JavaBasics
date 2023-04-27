@@ -9,6 +9,6 @@ public class Course {
     int qualityRatingOutOf10;
     String nameOfteacher;
     String nameOfSchool;
-    List<Course> students = new ArrayList<>();
+    List<Student> students = new ArrayList<>();
 
 }
